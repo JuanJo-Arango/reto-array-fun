@@ -8,8 +8,9 @@ public class TallerArray {
         imprimirArreglo(numeros);
 
         // 3. Encontrar el número mayor
+        System.out.println("El numero mayor es: ");
         int mayor = encontrarMayor(numeros);
-        System.out.println("El número mayor es: " + mayor);
+        System.out.println(mayor);
 
         // 4. Calcular el promedio
         double promedio = calcularPromedio(numeros);
@@ -37,12 +38,21 @@ public class TallerArray {
     // Método para encontrar el número mayor
     public static int encontrarMayor(int[] arr) {
         // Implementa este método
-        return 0;
-    }
-
+        int mayor=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]>mayor) {
+                mayor=arr[i];
+        }
+        }
+        return mayor;
+            
+            
+        }
+            
     // Método para calcular el promedio
     public static double calcularPromedio(int[] arr) {
         // Implementa este método
+        
         return 0.0;
     }
 
