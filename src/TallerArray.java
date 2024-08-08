@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class TallerArray {
     public static void main(String[] args) {
         // 1. Declaración e inicialización de un arreglo
@@ -81,6 +84,6 @@ public class TallerArray {
     // Método para ordenar el arreglo (puedes usar el algoritmo de burbuja)
     public static void ordenarArreglo(int[] arr) {
         // Implementa este método
-        
+        Arrays.sort(arr);
     }
 }
