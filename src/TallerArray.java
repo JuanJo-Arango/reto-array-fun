@@ -17,9 +17,9 @@ public class TallerArray {
         System.out.println("El promedio es: " + promedio);
 
         // 5. Invertir el arreglo
-        invertirArreglo(numeros);
+        int[] B=invertirArreglo(numeros);
         System.out.println("Arreglo invertido:");
-        imprimirArreglo(numeros);
+        imprimirArreglo(B);
 
         // 6. Ordenar el arreglo (implementa el método ordenarArreglo)
         ordenarArreglo(numeros);
@@ -42,33 +42,45 @@ public class TallerArray {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i]>mayor) {
                 mayor=arr[i];
+            }
         }
-        }
-        return mayor;
-            
-            
+        return mayor;   
         }
             
+
     // Método para calcular el promedio
     public static double calcularPromedio(int[] arr) {
         // Implementa este método
         double suma=0;
-            double promedio;
-        
-            for (int k = 0; k < arr.length; k++) {
-                suma +=arr[k];
-            }
-            promedio=suma/ arr.length;
+        double promedio;
+
+        for (int k = 0; k < arr.length; k++) {
+            suma +=arr[k];
+        }
+        promedio=suma/ arr.length;
         return promedio;
-    }
+}
+        
+    
 
     // Método para invertir el arreglo
-    public static void invertirArreglo(int[] arr) {
+    public static int[] invertirArreglo(int[] arr) {
         // Implementa este método
+        int[]  B=new int[arr.length];
+        
+        for (int i = 0; i < arr.length; i++) {
+        B[i] = arr[arr.length -1 -i];
+        }
+    return B;
     }
+
+    
+    
+    
 
     // Método para ordenar el arreglo (puedes usar el algoritmo de burbuja)
     public static void ordenarArreglo(int[] arr) {
         // Implementa este método
+        
     }
 }
