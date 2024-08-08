@@ -52,8 +52,14 @@ public class TallerArray {
     // Método para calcular el promedio
     public static double calcularPromedio(int[] arr) {
         // Implementa este método
+        double suma=0;
+            double promedio;
         
-        return 0.0;
+            for (int k = 0; k < arr.length; k++) {
+                suma +=arr[k];
+            }
+            promedio=suma/ arr.length;
+        return promedio;
     }
 
     // Método para invertir el arreglo
